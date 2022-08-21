@@ -3,7 +3,7 @@ local function getSmallestDistance(Distances)
 	local SmallestDistance = math.huge
 	for i, v in ipairs(Distances) do
 		for o, b in ipairs(Distances) do
-			local Distance = (v - b).Magnitude -- Didn't bother using squared distance lmao
+			local Distance = (v - b).Magnitude
 			if o ~= i and Distance < SmallestDistance then
 				SmallestDistance = Distance
 			end
